@@ -1,0 +1,11 @@
+To download presets, use our model downloader located here : https://www.patreon.com/posts/114517862
+
+Download the zip file, extract and run Windows_Start_Download_Models_App.bat
+
+Select your ComfyUI models folder path e.g. F:\Comfy_UI_V52\ComfyUI\models
+
+Enable checkbox : ComfyUI Folder Structure (e.g. 'loras' folder)
+
+And according to 0-Which_Bundles_Downloads_Which_Preset_Models.html download the bundle you want to use
+
+You can also use your models located in your SwarmUI here a tutorial : https://youtu.be/EqFilBM3i7s

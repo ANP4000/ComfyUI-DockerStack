@@ -1,0 +1,35 @@
+# Secrets
+.env
+PRIVATE_QUICKSTART.txt
+SECOURSES_TOOLS/SwarmUI_Model_Downloader_v130/
+
+# Zip archives
+*.zip
+
+# Large model/binary files
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+*.pkl
+*.h5
+*.tar
+*.tar.gz
+
+# ComfyUI runtime directories
+ComfyUI/models/
+ComfyUI/custom_nodes/
+ComfyUI/input/
+ComfyUI/output/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

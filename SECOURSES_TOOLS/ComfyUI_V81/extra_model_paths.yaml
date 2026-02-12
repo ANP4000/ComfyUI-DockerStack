@@ -1,0 +1,35 @@
+comfyui:
+     base_path: F:\SwarmUI_Model_Downloader_v81\SwarmUI\
+     is_default: true
+     checkpoints: |
+          Models/checkpoints
+          Models/Stable-Diffusion
+     text_encoders: |
+          Models/text_encoders
+          Models/clip
+     clip_vision: Models/clip_vision
+     style_models: Models/style_models
+     configs: Models/configs
+     controlnet: Models/controlnet
+     diffusion_models: |
+                  Models/diffusion_models
+                  Models/unet
+     embeddings: Models/Embeddings
+     loras: Models/Lora
+     upscale_models: |
+                   Models/upscale_Models
+                   Models/latent_upscale_models
+     vae: Models/VAE
+     audio_encoders: Models/audio_encoders
+     model_patches: |
+        Models/model_patches
+        Models/controlnet
+     latent_upscale_models: Models/latent_upscale_models
+     
+     
+path2:
+     base_path: F:\SECourses_Musubi_Trainer_v16\Training_Models_Qwen
+     is_default: false
+     checkpoints: |
+          Models/checkpoints   
+

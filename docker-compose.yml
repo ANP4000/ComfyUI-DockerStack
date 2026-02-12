@@ -1,0 +1,32 @@
+name: comfyui-v481
+services:
+  comfyui:
+    build: .
+    container_name: comfyui-v481
+    ports:
+      - "8188:8188"
+    volumes:
+      - ./ComfyUI/models:/app/ComfyUI/models
+      - ./ComfyUI/input:/app/ComfyUI/input
+      - ./ComfyUI/output:/app/ComfyUI/output
+      - ./ComfyUI/custom_nodes:/app/ComfyUI/custom_nodes
+      - ./ComfyUI/custom_Workflows:/app/ComfyUI/custom_Workflows
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - TORCH_USE_CUDA_DSA=1
+      - CUDA_LAUNCH_BLOCKING=0
+      - HF_HUB_ENABLE_HF_TRANSFER=1
+      - UV_SKIP_WHEEL_FILENAME_CHECK=1
+      - UV_LINK_MODE=copy
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    shm_size: '16gb'
+    restart: unless-stopped
